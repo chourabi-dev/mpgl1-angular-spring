@@ -1,0 +1,93 @@
+<!--<h1>Welcome to angular</h1>
+<p>MGGL1</p>
+
+
+<p>
+  email : {{ email }}
+</p>
+<p>
+  fullname : {{ fullname }}
+</p>
+<p>
+  phone : {{ phone }}
+</p>
+<p>
+  year : {{ year }} 2022
+</p>
+
+<p>
+  employees: {{ employees }}
+</p> -->
+
+
+
+<!-- PIPES -->
+
+<!-- wrong !! this method is only public in this componenent !!! -->
+<!--<p>{{ formatDate(today) }}</p>
+
+
+<p> {{ today | date:'medium' }} </p>
+
+<p> {{ 120000000 | currency:'TND'  }} </p>
+
+<p> {{ 120000000 | number }} </p>
+
+<p> {{ 'hello world' | uppercase }} </p>
+
+<p> {{ 'HELLO WORLD' | lowercase }} </p>
+
+<p> {{ 'welcome to angular spring course' | titlecase }} </p>
+
+
+<p>                                passing random params 
+  {{ 'tchourabi@gmail.com' | email:12:'abc' }}
+
+  {{ 'test@yahoo.com' | email }}
+</p>-->
+
+
+
+<div *ngIf=" showFirst " >
+  <h3>first para</h3>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quo maiores et itaque. Nihil, minus at. Nam vero similique itaque numquam natus hic, quos in voluptatem, corrupti velit illum enim.
+</div>
+
+
+<div *ngIf="showSecond" >
+  <h3>second para</h3>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quo maiores et itaque. Nihil, minus at. Nam vero similique itaque numquam natus hic, quos in voluptatem, corrupti velit illum enim.
+</div>
+
+
+
+
+<div>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, in omnis? In debitis doloremque molestiae cumque provident explicabo vel, sequi inventore assumenda ipsum similique ipsa eius eum, adipisci illum enim.
+
+  <a href="">lire la suite</a>
+
+  <div *ngIf=" true " >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit neque rerum consequuntur maxime, vel odit omnis iste at sapiente voluptatem id repellat quaerat. Laudantium molestiae mollitia quos possimus odit!
+  
+  </div>
+
+
+</div>
+
+
+
+
+
+<ul>
+ 
+  <li *ngFor=" let e of employees " >  
+    
+    <h3>{{ e.fullname }}</h3>
+    <p>
+      <small>{{ e.email }}</small>
+    </p>
+  </li>
+
+
+</ul>
