@@ -11,4 +11,13 @@ ng new project_name
 ng g p pipe_name
 
 
+** create new comp **
+
+ng g c comp_name
+
+** add bootstrap to angular app **
+
+npm install bootstrap
+
+
 

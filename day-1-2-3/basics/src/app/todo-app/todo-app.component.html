@@ -1,0 +1,14 @@
+<ul>
+    <li *ngFor="let task of tasks" >
+        <p>
+            {{ task.content }}
+            <br>
+            <small>{{ task.date | date:'medium' }}</small>
+        </p>
+    </li>
+</ul>
+
+<hr>
+
+<!-- keyboard event !! -->
+<input type="text" (keyup)="typing($event)" >
