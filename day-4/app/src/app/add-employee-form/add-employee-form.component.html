@@ -1,0 +1,56 @@
+
+
+<div style="float: left; width: 45%">
+    <p>
+        {{ addForm.status }}
+    </p>
+    <form  [formGroup]="addForm"  (ngSubmit)="createEmployee()" >
+        <div>
+            <label for="">employee name  <span *ngIf=" addForm.controls.fullname.status == 'INVALID' " class="text-danger">*</span> </label> <br>
+            <input type="text" formControlName="fullname" > <br>
+
+            <p class="text-danger"  *ngIf=" addForm.controls.fullname.status == 'INVALID' "><small>this feidl is invalid</small></p>
+        </div>
+        <div>
+            <label for="">employee email <span class="text-danger" *ngIf=" addForm.controls.email.status == 'INVALID' " >*</span></label> <br>
+            <input type="email" formControlName="email" >
+        </div>
+        <div>
+            <label for="">department</label><br>
+            <select formControlName="department" >
+                <option value="">please choose a value</option>
+                <option value="dep1">Department 1</option>
+                <option value="dep2">Department 2</option>
+                
+            </select>
+        </div>
+    
+    
+        <div>
+            <label for="">sex</label> <br>
+    
+            <input type="radio" value="1" formControlName="sex" > <label for="">homme</label> 
+            <input type="radio" value="2" formControlName="sex"> <label for="">femme</label> 
+
+        </div>
+    
+    
+        <button type="submit"  [disabled]=" addForm.status == 'INVALID' " >add employee</button>
+        
+    </form>
+    
+</div>
+
+<div style="float: left; width: 45%">
+    <h3>Employees list:</h3>
+
+
+    <ul>
+        <li *ngFor="let e of employees">
+            <p>{{ e.fullname }} / {{ e.department }}</p>
+            <p>
+                {{ e.email }}
+            </p>
+        </li>
+    </ul>
+</div>
