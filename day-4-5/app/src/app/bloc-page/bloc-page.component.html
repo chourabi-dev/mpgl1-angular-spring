@@ -1,0 +1,8 @@
+<h3>Artilces</h3>
+
+
+<ul>
+    <li *ngFor="let a of articles" >
+        <p><strong style="margin-right: 10px;" >{{ a.title }}</strong> <a [routerLink]=" '/blog/article/'+a.id"  >more details...</a> </p>
+    </li>
+</ul>
