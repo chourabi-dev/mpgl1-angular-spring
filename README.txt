@@ -20,4 +20,8 @@ ng g c comp_name
 npm install bootstrap
 
 
+** create new guard **
+ng g g guard_name
 
+** create new service **
+ng g s service_name

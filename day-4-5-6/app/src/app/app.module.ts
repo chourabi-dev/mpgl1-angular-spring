@@ -13,6 +13,7 @@ import { CompanyComponent } from './company/company.component';
 import { BlocPageComponent } from './bloc-page/bloc-page.component';
 import { ArticlePageComponent } from './article-page/article-page.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { AuthPageComponent } from './pages/auth-page/auth-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     CompanyComponent,
     BlocPageComponent,
     ArticlePageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AuthPageComponent
   ],
   imports: [
     BrowserModule,

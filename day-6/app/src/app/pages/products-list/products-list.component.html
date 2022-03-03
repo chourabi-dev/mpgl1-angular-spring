@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h3>Products List:</h3>
+
+
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let p of products" >
+                    <p><strong>{{ p.title }}</strong></p>
+                    <p> {{ p.price |currency }}, {{p.quantity}} unit </p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
