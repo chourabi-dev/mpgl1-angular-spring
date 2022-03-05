@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductsListComponent } from './pages/products-list/products-list.component';
 import { AddProductComponent } from './pages/add-product/add-product.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NewTypesComponent } from './new-types/new-types.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsListComponent,
-    AddProductComponent
+    AddProductComponent,
+    NewTypesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
